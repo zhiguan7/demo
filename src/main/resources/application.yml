@@ -12,5 +12,19 @@ person:
     - girl
     - music
   dog:
-    name: 旺旺
+    name: haha
     age: 1
+
+person2:
+  name: fivesixseven
+  age: 20
+  happy: true
+  birth: 2020/01/02
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - girl
+    - music
+  dog:
+    name: wangwang
+    age: 2

@@ -1,21 +1,25 @@
 package com.example.demo.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-@Component
+//@PropertySource(value = "classpath:person.properties")
 @ConfigurationProperties(prefix = "person")
+@Component
 public class Person {
 
+//    @Value("${name}")
     private String name;
     private Integer age;
     private Boolean happy;
-    @DateTimeFormat(pattern = "yyyy/MM/dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birth;
     private Map<String,Object> maps;
     private List<Object> lists;
