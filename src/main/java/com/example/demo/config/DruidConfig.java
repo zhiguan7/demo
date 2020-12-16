@@ -44,7 +44,7 @@ public class DruidConfig {
 
         HashMap<String, String> initParameters = new HashMap<>();
 
-        initParameters.put("exclusions","*.js,*.css,/druid/*,/jdbc/*");
+        initParameters.put("exclusions","*.js,*.css,*.xml,/druid/*,/jdbc/*");
 
         bean.setInitParameters(initParameters);
 
