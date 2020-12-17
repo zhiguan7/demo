@@ -33,6 +33,10 @@ spring:
 mybatis:
   type-aliases-package: com.example.demo.pojo
   mapper-locations: classpath:mapper/*.xml
+#  二级缓存在分布式下容易脏读
+#  configuration:
+#    cache-enabled: true
+#    local-cache-scope: STATEMENT #SESSION容易脏读
 
 person:
   name: 0phone
