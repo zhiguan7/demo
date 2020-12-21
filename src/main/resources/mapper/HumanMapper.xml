@@ -7,6 +7,13 @@
     <select id="queryAll" resultType="Human">
         select * from human
     </select>
+    <select id="queryByName" resultType="Human">
+        select * from human where name = #{name}
+    </select>
+    <insert id="create">
+        INSERT INTO human (name,password) VALUES (#{name},#{password})
+    </insert>
+
 
 <!--    <cache eviction="LRU" blocking="true"/>-->
 </mapper>

@@ -22,23 +22,23 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
+    <show-object-properties value="false" />
+    <loaded-nodes>
+      <connection connection-id="13d1cf5e-7bd2-470d-b3d1-10fe022e970d">
+        <schema name="springboot" object-types="dataset trigger, constraint, table, view, column, procedure, index, function" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="f921cd47-8d1f-4e06-b552-09e344f385eb">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="13d1cf5e-7bd2-470d-b3d1-10fe022e970d">
+      <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="f921cd47-8d1f-4e06-b552-09e344f385eb" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="f921cd47-8d1f-4e06-b552-09e344f385eb" dataset="springboot.human" active-filter-id="" />
-    <filter-actions connection-id="f921cd47-8d1f-4e06-b552-09e344f385eb" dataset="springboot.test" active-filter-id="" />
+    <connection id="13d1cf5e-7bd2-470d-b3d1-10fe022e970d" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -66,7 +66,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="f921cd47-8d1f-4e06-b552-09e344f385eb" active="true">
+      <connection id="13d1cf5e-7bd2-470d-b3d1-10fe022e970d" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -87,9 +87,7 @@
         <properties>
           <auto-commit value="false" />
           <properties>
-            <property key="useUnicode" value="true" />
             <property key="serverTimezone" value="UTC" />
-            <property key="characterEncoding" value="utf-8" />
           </properties>
         </properties>
         <ssh-settings>
