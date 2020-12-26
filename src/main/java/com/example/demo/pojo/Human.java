@@ -13,8 +13,7 @@ import java.io.Serializable;
 @ApiModel("人类")
 public class Human implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
+    private static final long serialVersionUID = 4604470281846422571L;
     @NotNull
     @ApiModelProperty("主键")
     private int pk;

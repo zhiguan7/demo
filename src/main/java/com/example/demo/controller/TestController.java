@@ -70,19 +70,18 @@ public class TestController {
     }
 
     @RequestMapping("/login")
-    public String login(boolean rememberMe, String name, String password, HttpSession session, Model model) {
+    public String login(boolean rememberMe, String name, String password, Model model) {
 
         Subject currentUser = SecurityUtils.getSubject();
 
         UsernamePasswordToken token = new UsernamePasswordToken(name,password);
 
         token.setRememberMe(rememberMe);
-
         if(!currentUser.isAuthenticated()){
             try {
                 currentUser.login(token);
                 Human human=(Human)SecurityUtils.getSubject().getPrincipal();
-                session.setAttribute("user",human);
+                model.addAttribute("name", human.getName());
                 return "index";
             } catch (UnknownAccountException e) {
                 model.addAttribute("msg", "用户名不存在");
